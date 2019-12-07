@@ -1,55 +1,53 @@
-// 管理员数据
 var dataAdmin = [
-    { "stuID": "201661005", "stuName": "于佳宁", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980618", "stuTelNum": "15327148912", "stuNativePlace": "内蒙古包头市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661289", "stuName": "张星", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980312", "stuTelNum": "17612766435", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661709", "stuName": "方金水", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981006", "stuTelNum": "18696279624", "stuNativePlace": "湖北省黄石市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661710", "stuName": "谢松贝", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980308", "stuTelNum": "17671695532", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661711", "stuName": "姜珊秀丽", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980825", "stuTelNum": "13593730849", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661712", "stuName": "金虎", "stuSex": "男", "stuAge": 23, "stuBirthday": "19961018", "stuTelNum": "13733587467", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661713", "stuName": "王卫", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990504", "stuTelNum": "15272274402", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661714", "stuName": "郭莉", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990131", "stuTelNum": "18571459121", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661715", "stuName": "袁成新", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960716", "stuTelNum": "16602745917", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661716", "stuName": "史洪婷", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980115", "stuTelNum": "15387137690", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661717", "stuName": "邓宝莉", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980129", "stuTelNum": "13396095129", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661718", "stuName": "尹文雪", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980201", "stuTelNum": "13247170201", "stuNativePlace": "湖北省襄阳市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661719", "stuName": "吴可馨", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981215", "stuTelNum": "15926022376", "stuNativePlace": "湖北省鄂州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661721", "stuName": "车林威", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980718", "stuTelNum": "17607113359", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661722", "stuName": "丁竹", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980826", "stuTelNum": "17771454525", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661723", "stuName": "易鸣", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "15572685346", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661724", "stuName": "舒成超", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980726", "stuTelNum": "17671724843", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661725", "stuName": "陈茜", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980402", "stuTelNum": "15387143893", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661726", "stuName": "丁佳文", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980810", "stuTelNum": "17137210182", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661727", "stuName": "江思思", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980513", "stuTelNum": "15071491191", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661728", "stuName": "陈施", "stuSex": "女", "stuAge": 22, "stuBirthday": "19970802", "stuTelNum": "15387143801", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661729", "stuName": "李伦", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970903", "stuTelNum": "13227308638", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661730", "stuName": "刘培", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981106", "stuTelNum": "18672127976", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661731", "stuName": "张海峰", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971010", "stuTelNum": "16602773639", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661732", "stuName": "雷雨阳", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970627", "stuTelNum": "13545679927", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661733", "stuName": "黄媛媛", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980518", "stuTelNum": "13035110438", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661734", "stuName": "欧阳有军", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981011", "stuTelNum": "17771454795", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661735", "stuName": "伍杨丹", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990207", "stuTelNum": "15387150907", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661736", "stuName": "申祥云", "stuSex": "女", "stuAge": 23, "stuBirthday": "19961126", "stuTelNum": "15271906235", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661737", "stuName": "高杨子", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980523", "stuTelNum": "13986530447", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661738", "stuName": "袁精润", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971016", "stuTelNum": "17152711947", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661739", "stuName": "陈锦慧", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990818", "stuTelNum": "15207107997", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661740", "stuName": "裴陈钦", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981016", "stuTelNum": "15972852895", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661742", "stuName": "曹杰", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980515", "stuTelNum": "13409732810", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661743", "stuName": "汪仕豪", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971112", "stuTelNum": "13387617531", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661744", "stuName": "丁茂东", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981212", "stuTelNum": "15271839115", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661745", "stuName": "阮子辰", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980119", "stuTelNum": "17371679331", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661746", "stuName": "谢双", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980707", "stuTelNum": "17771454710", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661747", "stuName": "徐红牛", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "13164128325", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661748", "stuName": "廖枕云", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981223", "stuTelNum": "13617292372", "stuNativePlace": "湖北省仙桃市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662395", "stuName": "徐凌强", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980917", "stuTelNum": "18259958693", "stuNativePlace": "福建省南平市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662396", "stuName": "柯华荣", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960823", "stuTelNum": "13147189271", "stuNativePlace": "福建省泉州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662630", "stuName": "杨隆凯", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980706", "stuTelNum": "17340554500", "stuNativePlace": "湖南省常德市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662639", "stuName": "夏波", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990102", "stuTelNum": "15387143836", "stuNativePlace": "湖南省邵阳市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450001", "stuName": "张壹", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980618", "stuTelNum": "15327148001", "stuNativePlace": "内蒙古省包头市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450002", "stuName": "张贰", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980312", "stuTelNum": "15327148002", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450003", "stuName": "张叁", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981006", "stuTelNum": "15327148003", "stuNativePlace": "湖北省黄石市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450004", "stuName": "张肆", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980308", "stuTelNum": "15327148004", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450005", "stuName": "张伍", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980825", "stuTelNum": "15327148005", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450006", "stuName": "张陆", "stuSex": "男", "stuAge": 23, "stuBirthday": "19961018", "stuTelNum": "15327148006", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450007", "stuName": "张柒", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990504", "stuTelNum": "15327148007", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450008", "stuName": "张捌", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990131", "stuTelNum": "15327148008", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450009", "stuName": "张玖", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960716", "stuTelNum": "15327148009", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450010", "stuName": "张壹拾", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980115", "stuTelNum": "15327148010", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450011", "stuName": "王壹", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980129", "stuTelNum": "15327148011", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450012", "stuName": "王贰", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980201", "stuTelNum": "15327148012", "stuNativePlace": "湖北省襄阳市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450013", "stuName": "王叁", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981215", "stuTelNum": "15327148013", "stuNativePlace": "湖北省鄂州市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450014", "stuName": "王肆", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980718", "stuTelNum": "15327148014", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450015", "stuName": "王伍", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980826", "stuTelNum": "15327148015", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450016", "stuName": "王陆", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "15327148016", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450017", "stuName": "王柒", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980726", "stuTelNum": "15327148017", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450018", "stuName": "王捌", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980402", "stuTelNum": "15327148018", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450019", "stuName": "王玖", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980810", "stuTelNum": "15327148019", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450020", "stuName": "王壹拾", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980513", "stuTelNum": "15327148020", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450021", "stuName": "李壹", "stuSex": "女", "stuAge": 22, "stuBirthday": "19970802", "stuTelNum": "15327148021", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450022", "stuName": "李贰", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970903", "stuTelNum": "15327148022", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450023", "stuName": "李叁", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981106", "stuTelNum": "15327148023", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450024", "stuName": "李肆", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971010", "stuTelNum": "15327148024", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450025", "stuName": "李伍", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970627", "stuTelNum": "15327148025", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450026", "stuName": "李陆", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980518", "stuTelNum": "15327148026", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450027", "stuName": "李柒", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981011", "stuTelNum": "15327148027", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450028", "stuName": "李捌", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990207", "stuTelNum": "15327148028", "stuNativePlace": "湖北省松滋市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450029", "stuName": "李玖", "stuSex": "女", "stuAge": 23, "stuBirthday": "19961126", "stuTelNum": "15327148029", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450030", "stuName": "李壹拾", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980523", "stuTelNum": "15327148030", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450031", "stuName": "赵壹", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971016", "stuTelNum": "15327148031", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450032", "stuName": "赵贰", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990818", "stuTelNum": "15327148032", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450033", "stuName": "赵叁", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981016", "stuTelNum": "15327148033", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450034", "stuName": "赵肆", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980515", "stuTelNum": "15327148034", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450035", "stuName": "赵伍", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971112", "stuTelNum": "15327148035", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450036", "stuName": "赵陆", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981212", "stuTelNum": "15327148036", "stuNativePlace": "湖北省麻城市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450037", "stuName": "赵柒", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980119", "stuTelNum": "15327148037", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450038", "stuName": "赵捌", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980707", "stuTelNum": "15327148038", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450039", "stuName": "赵玖", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "15327148039", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450040", "stuName": "赵壹拾", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981223", "stuTelNum": "15327148040", "stuNativePlace": "湖北省仙桃市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450041", "stuName": "许壹", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980917", "stuTelNum": "15327148041", "stuNativePlace": "福建省南平市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450042", "stuName": "许贰", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960823", "stuTelNum": "15327148042", "stuNativePlace": "福建省泉州市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450043", "stuName": "许叁", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980706", "stuTelNum": "15327148043", "stuNativePlace": "湖南省常德市", "stuDescribe": "这是默认描述，什么都没有" },
+    { "stuID": "123450044", "stuName": "许肆", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990102", "stuTelNum": "15327148044", "stuNativePlace": "湖南省邵阳市", "stuDescribe": "这是默认描述，什么都没有" },
+
 ]
 var dataTitle = [{ "stuID": "学号", "stuName": "姓名", "stuSex": "性别", "stuAge": "年龄", "stuBirthday": "生日", "stuTelNum": "手机号码", "stuNativePlace": "籍贯", "stuDescribe": "描述" }];
 
 
-
-// 克隆数据
 function clone(arr) {
     var newArr = [];
     for (var i = 0; i < arr.length; i++) {
@@ -65,121 +63,3 @@ function clone(arr) {
 var dataUser = clone(dataAdmin);
 
 var dataBackup = clone(dataUser);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var dataUser2 = [
-    { "stuID": "201661005", "stuName": "于佳宁", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980618", "stuTelNum": "15327148912", "stuNativePlace": "内蒙古包头市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661289", "stuName": "张星", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980312", "stuTelNum": "17612766435", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661709", "stuName": "方金水", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981006", "stuTelNum": "18696279624", "stuNativePlace": "湖北省黄石市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661710", "stuName": "谢松贝", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980308", "stuTelNum": "17671695532", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661711", "stuName": "姜珊秀丽", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980825", "stuTelNum": "13593730849", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661712", "stuName": "金虎", "stuSex": "男", "stuAge": 23, "stuBirthday": "19961018", "stuTelNum": "13733587467", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661713", "stuName": "王卫", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990504", "stuTelNum": "15272274402", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661714", "stuName": "郭莉", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990131", "stuTelNum": "18571459121", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661715", "stuName": "袁成新", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960716", "stuTelNum": "16602745917", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661716", "stuName": "史洪婷", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980115", "stuTelNum": "15387137690", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661717", "stuName": "邓宝莉", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980129", "stuTelNum": "13396095129", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661718", "stuName": "尹文雪", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980201", "stuTelNum": "13247170201", "stuNativePlace": "湖北省襄阳市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661719", "stuName": "吴可馨", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981215", "stuTelNum": "15926022376", "stuNativePlace": "湖北省鄂州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661721", "stuName": "车林威", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980718", "stuTelNum": "17607113359", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661722", "stuName": "丁竹", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980826", "stuTelNum": "17771454525", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661723", "stuName": "易鸣", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "15572685346", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661724", "stuName": "舒成超", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980726", "stuTelNum": "17671724843", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661725", "stuName": "陈茜", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980402", "stuTelNum": "15387143893", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661726", "stuName": "丁佳文", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980810", "stuTelNum": "17137210182", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661727", "stuName": "江思思", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980513", "stuTelNum": "15071491191", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661728", "stuName": "陈施", "stuSex": "女", "stuAge": 22, "stuBirthday": "19970802", "stuTelNum": "15387143801", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661729", "stuName": "李伦", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970903", "stuTelNum": "13227308638", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661730", "stuName": "刘培", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981106", "stuTelNum": "18672127976", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661731", "stuName": "张海峰", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971010", "stuTelNum": "16602773639", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661732", "stuName": "雷雨阳", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970627", "stuTelNum": "13545679927", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661733", "stuName": "黄媛媛", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980518", "stuTelNum": "13035110438", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661734", "stuName": "欧阳有军", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981011", "stuTelNum": "17771454795", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661735", "stuName": "伍杨丹", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990207", "stuTelNum": "15387150907", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661736", "stuName": "申祥云", "stuSex": "女", "stuAge": 23, "stuBirthday": "19961126", "stuTelNum": "15271906235", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661737", "stuName": "高杨子", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980523", "stuTelNum": "13986530447", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661738", "stuName": "袁精润", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971016", "stuTelNum": "17152711947", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661739", "stuName": "陈锦慧", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990818", "stuTelNum": "15207107997", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661740", "stuName": "裴陈钦", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981016", "stuTelNum": "15972852895", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661742", "stuName": "曹杰", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980515", "stuTelNum": "13409732810", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661743", "stuName": "汪仕豪", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971112", "stuTelNum": "13387617531", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661744", "stuName": "丁茂东", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981212", "stuTelNum": "15271839115", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661745", "stuName": "阮子辰", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980119", "stuTelNum": "17371679331", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661746", "stuName": "谢双", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980707", "stuTelNum": "17771454710", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661747", "stuName": "徐红牛", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "13164128325", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661748", "stuName": "廖枕云", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981223", "stuTelNum": "13617292372", "stuNativePlace": "湖北省仙桃市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662395", "stuName": "徐凌强", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980917", "stuTelNum": "18259958693", "stuNativePlace": "福建省南平市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662396", "stuName": "柯华荣", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960823", "stuTelNum": "13147189271", "stuNativePlace": "福建省泉州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662630", "stuName": "杨隆凯", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980706", "stuTelNum": "17340554500", "stuNativePlace": "湖南省常德市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662639", "stuName": "夏波", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990102", "stuTelNum": "15387143836", "stuNativePlace": "湖南省邵阳市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661005", "stuName": "于佳宁", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980618", "stuTelNum": "15327148912", "stuNativePlace": "内蒙古包头市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661289", "stuName": "张星", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980312", "stuTelNum": "17612766435", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661709", "stuName": "方金水", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981006", "stuTelNum": "18696279624", "stuNativePlace": "湖北省黄石市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661710", "stuName": "谢松贝", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980308", "stuTelNum": "17671695532", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661711", "stuName": "姜珊秀丽", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980825", "stuTelNum": "13593730849", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661712", "stuName": "金虎", "stuSex": "男", "stuAge": 23, "stuBirthday": "19961018", "stuTelNum": "13733587467", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661713", "stuName": "王卫", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990504", "stuTelNum": "15272274402", "stuNativePlace": "湖北省十堰市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661714", "stuName": "郭莉", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990131", "stuTelNum": "18571459121", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661715", "stuName": "袁成新", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960716", "stuTelNum": "16602745917", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661716", "stuName": "史洪婷", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980115", "stuTelNum": "15387137690", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661717", "stuName": "邓宝莉", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980129", "stuTelNum": "13396095129", "stuNativePlace": "湖北省宜昌市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661718", "stuName": "尹文雪", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980201", "stuTelNum": "13247170201", "stuNativePlace": "湖北省襄阳市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661719", "stuName": "吴可馨", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981215", "stuTelNum": "15926022376", "stuNativePlace": "湖北省鄂州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661721", "stuName": "车林威", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980718", "stuTelNum": "17607113359", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661722", "stuName": "丁竹", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980826", "stuTelNum": "17771454525", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661723", "stuName": "易鸣", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "15572685346", "stuNativePlace": "湖北省荆门市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661724", "stuName": "舒成超", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980726", "stuTelNum": "17671724843", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661725", "stuName": "陈茜", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980402", "stuTelNum": "15387143893", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661726", "stuName": "丁佳文", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980810", "stuTelNum": "17137210182", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661727", "stuName": "江思思", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980513", "stuTelNum": "15071491191", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661728", "stuName": "陈施", "stuSex": "女", "stuAge": 22, "stuBirthday": "19970802", "stuTelNum": "15387143801", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661729", "stuName": "李伦", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970903", "stuTelNum": "13227308638", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661730", "stuName": "刘培", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981106", "stuTelNum": "18672127976", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661731", "stuName": "张海峰", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971010", "stuTelNum": "16602773639", "stuNativePlace": "湖北省孝感市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661732", "stuName": "雷雨阳", "stuSex": "男", "stuAge": 22, "stuBirthday": "19970627", "stuTelNum": "13545679927", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661733", "stuName": "黄媛媛", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980518", "stuTelNum": "13035110438", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661734", "stuName": "欧阳有军", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981011", "stuTelNum": "17771454795", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661735", "stuName": "伍杨丹", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990207", "stuTelNum": "15387150907", "stuNativePlace": "湖北省荆州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661736", "stuName": "申祥云", "stuSex": "女", "stuAge": 23, "stuBirthday": "19961126", "stuTelNum": "15271906235", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661737", "stuName": "高杨子", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980523", "stuTelNum": "13986530447", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661738", "stuName": "袁精润", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971016", "stuTelNum": "17152711947", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661739", "stuName": "陈锦慧", "stuSex": "女", "stuAge": 20, "stuBirthday": "19990818", "stuTelNum": "15207107997", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661740", "stuName": "裴陈钦", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981016", "stuTelNum": "15972852895", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661742", "stuName": "曹杰", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980515", "stuTelNum": "13409732810", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661743", "stuName": "汪仕豪", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971112", "stuTelNum": "13387617531", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661744", "stuName": "丁茂东", "stuSex": "男", "stuAge": 21, "stuBirthday": "19981212", "stuTelNum": "15271839115", "stuNativePlace": "湖北省黄冈市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661745", "stuName": "阮子辰", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980119", "stuTelNum": "17371679331", "stuNativePlace": "湖北省咸宁市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661746", "stuName": "谢双", "stuSex": "女", "stuAge": 21, "stuBirthday": "19980707", "stuTelNum": "17771454710", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661747", "stuName": "徐红牛", "stuSex": "男", "stuAge": 22, "stuBirthday": "19971120", "stuTelNum": "13164128325", "stuNativePlace": "湖北省随州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201661748", "stuName": "廖枕云", "stuSex": "女", "stuAge": 21, "stuBirthday": "19981223", "stuTelNum": "13617292372", "stuNativePlace": "湖北省仙桃市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662395", "stuName": "徐凌强", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980917", "stuTelNum": "18259958693", "stuNativePlace": "福建省南平市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662396", "stuName": "柯华荣", "stuSex": "男", "stuAge": 23, "stuBirthday": "19960823", "stuTelNum": "13147189271", "stuNativePlace": "福建省泉州市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662630", "stuName": "杨隆凯", "stuSex": "男", "stuAge": 21, "stuBirthday": "19980706", "stuTelNum": "17340554500", "stuNativePlace": "湖南省常德市", "stuDescribe": "这是默认描述，什么都没有" },
-    { "stuID": "201662639", "stuName": "夏波", "stuSex": "男", "stuAge": 20, "stuBirthday": "19990102", "stuTelNum": "15387143836", "stuNativePlace": "湖南省邵阳市", "stuDescribe": "这是默认描述，什么都没有" },
-]
