@@ -1,0 +1,152 @@
+.alter {
+    width: 1160px;
+    height: 745px;
+    /* border: 1px solid red; */
+    /* background-color: rgba(78, 76, 76, 0.3); */
+    position: absolute;
+    top: 0;
+    left: -4px;
+    z-index: 9;
+    display: none;
+}
+
+.alter_area {
+    width: 550px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 160px;
+    border-radius: 5px;
+    background-color: rgba(232, 232, 232, 1);
+    position: relative;
+    border: 5px solid #52d3f0;
+    ;
+}
+
+#close_alter_area {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    /* border: 1px solid greenyellow; */
+    background-image: url(../img/close.png);
+    background-repeat: no-repeat;
+    /* background-position: 8px 8px; */
+}
+
+.alter_area div {
+    width: 450px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.alter_area div span {
+    width: 60px;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    font-size: 14px;
+    color: #4e4c4c;
+    display: inline-block;
+    /* border: 1px solid red; */
+    /* background-color: #fff; */
+}
+
+.alter_area div input {
+    width: 150px;
+    height: 20px;
+    border: 2px solid #52d3f0;
+    /* background-color: rgba(232, 232, 232, 1); */
+}
+
+.alter_area div select {
+    min-width: 50px;
+    height: 20px;
+    border: 2px solid #52d3f0;
+}
+
+.alter_area div p {
+    width: 200px;
+    height: 20px;
+    padding-left: 20px;
+    /* border: 1px solid red; */
+    line-height: 20px;
+    background-image: url(../img/wrong.png);
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    color: #ff0000;
+    display: inline-block;
+    display: none;
+}
+
+.alter_area .alter_area_btn {
+    width: 150px;
+    position: relative;
+    top: 40px;
+    /* border: 1px solid red; */
+}
+
+.alter_area_btn button {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #52d3f0;
+}
+
+#alter_area_btn1 {
+    float: left;
+}
+
+#alter_area_btn2 {
+    float: right;
+}
+
+#input_admin_pwd {
+    width: 540px;
+    height: 440px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/danger.png);
+    background-repeat: no-repeat;
+    background-position: 211px 50px;
+    display: none;
+}
+
+#input_admin_pwd input {
+    width: 250px;
+    height: 50px;
+    margin-top: 220px;
+    margin-left: 140px;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    border: 2px solid #ff0000;
+}
+
+#input_admin_pwd input::-webkit-input-placeholder {
+    color: red;
+}
+
+#input_admin_pwd div {
+    margin-top: 10px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+#input_admin_pwd div button {
+    width: 60px;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #ff0000;
+}

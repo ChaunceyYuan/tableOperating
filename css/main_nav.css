@@ -1,0 +1,18 @@
+.main_nav {
+    width: 1150px;
+    height: 40px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 5px;
+    line-height: 50px;
+}
+
+.main_nav ul li {
+    float: left;
+    line-height: 40px;
+}
+
+.main_nav ul li a {
+    color: #4e4c4c;
+    font-size: 16px;
+}

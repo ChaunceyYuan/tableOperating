@@ -1,0 +1,23 @@
+.paging {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.paging button {
+    width: 60px;
+    height: 30px;
+    /* margin-right: 10px; */
+    color: #4e4c4c;
+    font-size: 14px;
+    border: 2px solid #52d3f0;
+    background-color: #fff;
+}
+
+.paging button:hover {
+    border: none;
+    background-color: rgba(82, 211, 240, 0.5);
+}

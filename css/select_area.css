@@ -1,0 +1,88 @@
+.select_area {
+    width: 1150px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    font-size: 20px;
+    background-color: #F3F3F3;
+    position: relative;
+}
+
+.select_menu,
+.sort_menu {
+    width: 1150px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    /* border: 1px solid blue; */
+}
+
+.select_area_title {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    float: left;
+    display: inline-block;
+    /* border: 1px solid blue; */
+}
+
+.select_menu span,
+.sort_menu span {
+    width: 60px;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    font-size: 16px;
+    float: left;
+    display: inline-block;
+    /* border: 1px solid blue; */
+}
+
+#add_info {
+    position: relative;
+    top: -3px;
+    margin-left: 30px;
+}
+
+#add_info button {
+    width: 55px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: #52d3f0;
+}
+
+#select_btn {
+    margin-left: 30px;
+    text-align: center;
+}
+
+#select_btn button {
+    width: 55px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: #52d3f0;
+}
+
+.select_menu input,
+.sort_menu input,
+.sort_menu p {
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+.sort_menu p,
+.sort_menu label {
+    top: 14px;
+}
+
+#select_sex {
+    text-align: left;
+}
